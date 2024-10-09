@@ -1,9 +1,9 @@
 package week10Programs;
 
 public class Employee {
-	private int id;
+	private int employeeId;
     
-	private String name;
+	private String employeeName;
      
 	private int age;
      
