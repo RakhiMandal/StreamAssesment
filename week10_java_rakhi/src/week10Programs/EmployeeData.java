@@ -18,7 +18,7 @@ public class EmployeeData {
 		employeeList.add(new Employee(7, "KamalKumar", 35, "Male", "Finance", 2010, 27000.0));
 		employeeList.add(new Employee(8, "Suresh", 31, "Male", "Development", 2015, 34500.0));
 		employeeList.add(new Employee(9, "AKhila", 24, "Female", "Marketing", 2016, 11500.0));
-		employeeList.add(new Employee(10, "Arjun", 38, "Male", "Sales", 2015, 11000.5));
+		employeeList.add(new Employee(10, "Arjun Kumar", 38, "Male", "Sales", 2015, 11000.5));
 		return employeeList;
 
 	}
