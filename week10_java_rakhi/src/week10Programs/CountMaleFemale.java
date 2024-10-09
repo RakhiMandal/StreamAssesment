@@ -14,9 +14,11 @@ public class CountMaleFemale {
 		Map<String, Long> countMaleFemale = emplist.stream()
 				.collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
 		System.out.println(countMaleFemale);
-		
 	
 	}
+	System.out.println("a little bit of modification");
+	System.out.println("count of the male and female");
 
 }
+
 
