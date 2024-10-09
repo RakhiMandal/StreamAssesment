@@ -10,7 +10,7 @@ public class CountMaleFemale {
 		List<Employee> emplist =EmployeeData.getAllData();
 		System.out.println("Males :"+emplist.stream().filter(e->e.getGender().equalsIgnoreCase("male")).count());;
 		
-//		or
+//		or method2
 		Map<String, Long> countMaleFemale = emplist.stream()
 				.collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
 		System.out.println(countMaleFemale);
