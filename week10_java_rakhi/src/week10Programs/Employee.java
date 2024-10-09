@@ -3,7 +3,7 @@ package week10Programs;
 public class Employee {
 	private int employeeId;
     
-	private String name;
+	private String employeeName;
      
 	private int age;
      
