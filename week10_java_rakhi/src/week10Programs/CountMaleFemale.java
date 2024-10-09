@@ -8,8 +8,8 @@ public class CountMaleFemale {
 
 	public static void main(String[] args) {
 		List<Employee> emplist =EmployeeData.getAllData();
-		System.out.println("Males :"+emplist.stream().filter(e->e.getGender().equalsIgnoreCase("male")).count());;
-		
+		System.out.println("Males :"+emplist.stream().filter(employee->employee.getGender().equalsIgnoreCase("male")).count());
+        System.out.println("Females :"+emplist.stream().filter(employee->employee.getGender().equalsIgnoreCase("female")).count());	
 //		or method2
 		Map<String, Long> countMaleFemale = emplist.stream()
 				.collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
