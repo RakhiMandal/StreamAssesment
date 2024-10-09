@@ -11,6 +11,7 @@ public class ListOfAllEmplyeesInEachDept {
 		Map<String, List<Employee>> list = emplist.stream().collect(Collectors.groupingBy(Employee::getDepartment));
 		list.entrySet().stream().forEach(e->System.out.println("Department name :"+e.getKey() +" \nEmployee details: \n"+e.getValue()));
 
+		System.out.println(list);
 	}
 
 }
